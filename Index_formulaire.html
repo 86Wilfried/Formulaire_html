@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire voyage</title> 
+</head>
+    <h1>Candidater pour partir en voyage</h1>
+    <p>Notre société <strong>Evasion </strong>vous propose de découvrir en avant première des lieux paradisiaques
+    quenous souhaitons ajouter à notre catalogue. Merci de remplir les différents champs ci-dessous pour 
+    candidater au poste d'<strong>Eva'discover</strong>!</p>
+
+    <form action="" method="">
+        <fieldset>
+            <legend>Coordonnée</legend>
+            <div>
+                <label for="usermail"> Votre email(*) :</label>
+                <input type="email" id="usermail" placeholder="email@email">
+            </div>
+            <div>
+                <label for="userphone">Votre téléphone :</label>
+                <input type="tel" id="userphone" placeholder="numéro"> 
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <div>
+                <label for="lastname"> Votre nom :</label>
+                <input type="text" id="lastname" placeholder="NOM">
+            </div>
+            <div>
+                <label for="firstname"> Votre prénom :</label>
+                <input type="text" id="firstname" placeholder="Prénom">
+            </div>
+            <hr>
+                
+                <span>Vous êtes plutôt :</span>
+                <input type="radio" name="gender" id="female">
+                <label for="man"> féminin </label>
+                <input type="radio" name="gender" id="male">
+                <label for="woman"> masculin </label>
+                <input type="radio" name="gender" id="nothing">
+                <label for="nothing"> à déterminer </label>
+
+            <hr>
+
+            <div>
+                <label for="adress"> Votre adresse :</label>
+                <input type="text" id="adress" placeholder="42 av. Charles De Gaulle">
+            </div>
+            <div>
+                <label for="zipcode"> Votre code postal :</label>
+                <input type="text" id="zipcode" size="5" maxlength="5" placeholder="75012">
+            </div>
+            <div>
+                <label for="city"> Votre ville :</label>
+                <input type="text" id="city" placeholder="Paris">
+            </div>
+
+                <label for="department"> Votre département :</label>
+                <select name="department"  id="department">
+                    <option value="04">Alpes de Haute</option>
+                    <option value="93">Seine Saint Denis</option>
+                    <option value="95">Oise</option>
+                </select>
+            
+            <hr>
+
+            <p>Quel budget êtes vous prêt à investir pour valider votre candidature?</p>
+            <label for="budget"> Budget :</label>
+            <input type="range" name="" id="tickmarks" list="tickmarks" >
+            <datalist id="tickmarks">
+                <option value="200"></option>
+                <option value="300"></option>
+                <option value="400"></option>
+                <option value="500"></option>
+                <option value="1000"></option>
+                <option value="1500"></option>
+                <option value="2000"></option>
+                <option value="2500"></option>
+                <option value="3000"></option>
+            </datalist>
+            
+        </fieldset>
+        <fieldset>
+
+            <legend>Langues</legend>
+            <p>Merci de cocher toutes les langues que vous pratiquez :</p>
+
+            <input type="checkbox" name="langage" id="english">
+            <label for="english">Anglais</label>
+            <input type="checkbox" name="langage" id="french">
+            <label for="french">Français</label>
+            <input type="checkbox" name="langage" id="spanish">
+            <label for="spanish">Espagnol</label>
+            <input type="checkbox" name="langage" id="italino">
+            <label for="italiano">Italien</label>
+
+        </fieldset>
+        <fieldset>
+
+            <label for="" id="destinations"> Choisir une destinations :</label>
+            <select name="" id="destinations" size="6" multiple>
+                <optgroup label="Outre-Mer">
+                    <option>Martinique</option>
+                    <option>Guadeloupe</option>
+                    <option>Réunion</option>
+                    <option>St Domingue</option>
+                </optgroup>
+                <optgroup label="Etranger">
+                    <option>New-York</option>
+                    <option>Cuba</option>
+                    <option>Brésil</option>
+                    <option>Chine</option>
+                </optgroup>
+            </select>
+
+        </fieldset>
+
+        <input type="submit" name="" value="Envoyer">
+
+    </form>
+<body>
+    
